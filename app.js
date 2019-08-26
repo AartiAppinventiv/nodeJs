@@ -13,9 +13,9 @@ const members = [
 
 let idCount = 1;
 app.post('/',(req,res)=>{
-    console.log(req.body);
+    //console.log(req.body);
     const newMem = req.body;
-        console.log(newMem);
+        //console.log(newMem);
     
     members.push(newMem);
     //res.json(members);
@@ -27,4 +27,3 @@ app.post('/',(req,res)=>{
 app.listen(3000, ()=> {
     console.log('server is listen on port 3000');
 })
-
